@@ -13,3 +13,18 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 * Conocer varios tipos de bases de datos y utilizar PostgreSQL;
 * Trabajar con varios tipos de consultas a la base de datos;
 * Profundizar en la interfaz JPA Repository.
+
+
+### PASOS DEL CURSO BY SANCHEZLUYS
+
+| Clase | Descripción                                    | Estado |
+|-------|------------------------------------------------|--------|
+| 01-03 | Avanzando con nuestra aplicación Java          |        |
+|       | - Se crea la opcion listado de series buscadas |        |
+|       | - Se crea el metodo mostrarSeriesBuscadas()    |        |
+|       |                                                |        |
+|       |                                                |        |
+|       |                                                |        |
+|       |                                                |        |
+|       |                                                |        |
+|       |                                                |        |

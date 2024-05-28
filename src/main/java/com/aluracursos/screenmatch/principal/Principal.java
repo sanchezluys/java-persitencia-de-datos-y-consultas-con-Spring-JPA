@@ -12,18 +12,25 @@ public class Principal {
     private Scanner teclado = new Scanner(System.in);
     private ConsumoAPI consumoApi = new ConsumoAPI();
     private final String URL_BASE = "https://www.omdbapi.com/?t=";
-    private final String API_KEY = "5e85123f";
+    private final String API_KEY = "&apikey=5e85123f";
     private ConvierteDatos conversor = new ConvierteDatos();
+    //clase 01-03
+    private List<DatosSerie> datosSeries = new ArrayList<>();
+
 
     public void muestraElMenu() {
         var opcion = -1;
         while (opcion != 0) {
             var menu = """
+                    ----------------------------------------------------------------              
+                    Buscador de series y episodios
+                    ----------------------------------------------------------------    
                     1 - Buscar series 
                     2 - Buscar episodios
                     3 - Mostrar series buscadas
-                                  
+                    ----------------------------------------------------------------              
                     0 - Salir
+                    ----------------------------------------------------------------
                     """;
             System.out.println(menu);
             opcion = teclado.nextInt();
@@ -36,7 +43,9 @@ public class Principal {
                 case 2:
                     buscarEpisodioPorSerie();
                     break;
-
+                case 3:
+                    mostrarSeriesBuscadas();
+                    break;
                 case 0:
                     System.out.println("Cerrando la aplicación...");
                     break;
@@ -46,6 +55,8 @@ public class Principal {
         }
 
     }
+
+
 
     private DatosSerie getDatosSerie() {
         System.out.println("Escribe el nombre de la serie que deseas buscar");
@@ -68,7 +79,13 @@ public class Principal {
     }
     private void buscarSerieWeb() {
         DatosSerie datos = getDatosSerie();
+        datosSeries.add(datos);
         System.out.println(datos);
+    }
+
+    private void mostrarSeriesBuscadas()
+    {
+        datosSeries.forEach(System.out::println);
     }
 
 
