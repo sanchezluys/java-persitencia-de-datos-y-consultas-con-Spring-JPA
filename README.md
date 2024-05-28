@@ -17,14 +17,20 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 
 ### PASOS DEL CURSO BY SANCHEZLUYS
 
-| Clase | Descripción                                    | Estado |
-|-------|------------------------------------------------|--------|
-| 01-03 | Avanzando con nuestra aplicación Java          |        |
-|       | - Se crea la opcion listado de series buscadas |        |
-|       | - Se crea el metodo mostrarSeriesBuscadas()    |        |
-|       |                                                |        |
-|       |                                                |        |
-|       |                                                |        |
-|       |                                                |        |
-|       |                                                |        |
-|       |                                                |        |
+| Clase | Descripción                                     | Estado |
+|-------|-------------------------------------------------|--------|
+| 01-03 | Avanzando con nuestra aplicación Java           |        |
+|       | - Se crea la opcion listado de series buscadas  |        |
+|       | - Se crea el metodo mostrarSeriesBuscadas()     |        |
+|       |                                                 |        |
+| 01-06 | Modelando categorías y series                   |        |
+|       | Se crea la clase Series                         |        |
+|       | Se crea un enum Categoria                       |        |
+|       | Se crean los enum Accion, Romance etc           |        |
+|       | Se hace el constructor para las categorias      |        |
+|       | Uso de CTRL + F para reemplazar rapido un texto |        |
+|       | =>Menu ->Edit->Find->Find...                    |        |
+|       |                                                 |        |
+|       |                                                 |        |
+|       |                                                 |        |
+|       |                                                 |        |
