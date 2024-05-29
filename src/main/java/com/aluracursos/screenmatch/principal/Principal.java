@@ -2,11 +2,14 @@ package com.aluracursos.screenmatch.principal;
 
 import com.aluracursos.screenmatch.model.DatosSerie;
 import com.aluracursos.screenmatch.model.DatosTemporadas;
+import com.aluracursos.screenmatch.model.Serie;
 import com.aluracursos.screenmatch.service.ConsumoAPI;
 import com.aluracursos.screenmatch.service.ConvierteDatos;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Principal {
     private Scanner teclado = new Scanner(System.in);
@@ -81,11 +84,21 @@ public class Principal {
         DatosSerie datos = getDatosSerie();
         datosSeries.add(datos);
         System.out.println(datos);
+        //** luys revisando
+        //System.out.println("datosSeries "+ datosSeries);
     }
 
     private void mostrarSeriesBuscadas()
     {
-        datosSeries.forEach(System.out::println);
+        List<Serie> series = new ArrayList<>();
+        series= datosSeries.stream()
+                .map(d-> new Serie(d))
+                .collect(Collectors.toList());
+
+        series.stream()
+                .sorted(Comparator.comparing(Serie::getGenero))
+                .forEach(System.out::println);
+
     }
 
 

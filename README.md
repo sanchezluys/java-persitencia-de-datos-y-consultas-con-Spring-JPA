@@ -16,7 +16,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 
 ----------------------------------------------------------------
 
-### PASOS DEL CURSO BY SANCHEZLUYS
+### Pasos para el curso by sanchezluys
 
 | Clase | Descripción                                     | Estado |
 |-------|-------------------------------------------------|--------|
@@ -36,5 +36,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | Se crea el constructor para Serie               |        |
 |       | Se usa optional para evaluacion                 |        |
 |       |                                                 |        |
-|       |                                                 |        |
+| 01-10 | Terminando la adaptación para la clase Serie    |        |
+|       | Se modifica el metodo mostrarSeriesBuscadas     |        |
+|       | usando stream()                                 |        |
 |       |                                                 |        |
