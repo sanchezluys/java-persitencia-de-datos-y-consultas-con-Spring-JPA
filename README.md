@@ -14,6 +14,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 * Trabajar con varios tipos de consultas a la base de datos;
 * Profundizar en la interfaz JPA Repository.
 
+----------------------------------------------------------------
 
 ### PASOS DEL CURSO BY SANCHEZLUYS
 
@@ -31,6 +32,9 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | Uso de CTRL + F para reemplazar rapido un texto |        |
 |       | =>Menu ->Edit->Find->Find...                    |        |
 |       |                                                 |        |
+| 01-09 | Utilizando la clase más completa                |        |
+|       | Se crea el constructor para Serie               |        |
+|       | Se usa optional para evaluacion                 |        |
 |       |                                                 |        |
 |       |                                                 |        |
 |       |                                                 |        |

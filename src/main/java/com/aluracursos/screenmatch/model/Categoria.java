@@ -22,4 +22,14 @@ public enum Categoria {
     Categoria(String categoriasOmdb) {
         this.categoriasOmdb = categoriasOmdb;
     }
+
+    public static Categoria fromString(String text)
+    {
+        for (Categoria categoria : Categoria.values()) {
+            if (categoria.categoriasOmdb.equalsIgnoreCase(text)) {
+                return categoria;
+            }
+        }
+        throw new IllegalArgumentException("Ninguna Categoria encontrada "+ text);
+    }
 }
