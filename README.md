@@ -16,7 +16,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 
 ----------------------------------------------------------------
 
-### Pasos para el curso by sanchezluys
+### Progreso del curso by sanchezluys
 
 | Clase | Descripción                                                              | Estado                         |
 |-------|--------------------------------------------------------------------------|--------------------------------|
@@ -56,5 +56,12 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | this.sinopsis = ConsultaChatGPT.obtenerTraduccion(datosSerie.sinopsis()) |                                |
 |       | Se  desactiva la traduccion chtgpt ya que no tengo creditos.             |                                |
 |       |                                                                          |                                |
+| 02-13 | Creando una base de datos relacional                                     |                                |
+|       | En mi caso uso bd postresql alojada en un servicio gratuito en neon.tech |                                |
 |       |                                                                          |                                |
 |       |                                                                          |                                |
+|       |                                                                          |                                |
+|       |                                                                          |                                |
+|       |                                                                          |                                |
+
+![img.png](img.png)
