@@ -65,7 +65,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       |                                                                                        |                                |
 | 02-05 | Conectando a la base de datos                                                          |                                |
 |       | Se crea la bd, Java_Screenmatch con PgAdmin                                            |                                |
-|       |                                                                                        |                                |
+|       | Se configura el archivo de configuracion con las credenciales                          |                                |
 |       |                                                                                        |                                |
 |       |                                                                                        |                                |
 |       |                                                                                        |                                |
