@@ -56,12 +56,19 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | this.sinopsis = ConsultaChatGPT.obtenerTraduccion(datosSerie.sinopsis())               |                                |
 |       | Se  desactiva la traduccion chtgpt ya que no tengo creditos.                           |                                |
 |       |                                                                                        |                                |
-| 02-13 | Creando una base de datos relacional                                                   |                                |
+| 02-03 | Creando una base de datos relacional                                                   |                                |
 |       | En mi caso uso bd postresql alojada en un servicio gratuito en neon.tech               |                                |
 |       | Se usa https://start.spring.io/                                                        |                                |
 |       | Para instalara Spring Data JPA                                                         |                                |
 |       | tambien el driver de postgresql                                                        |                                |
 |       | Se agregan las dependencias de JPA y el Driver de postgresq en el pom.xml del proyecto |                                |
+|       |                                                                                        |                                |
+| 02-05 | Conectando a la base de datos                                                          |                                |
+|       | Se crea la bd, Java_Screenmatch con PgAdmin                                            |                                |
+|       |                                                                                        |                                |
+|       |                                                                                        |                                |
+|       |                                                                                        |                                |
+|       |                                                                                        |                                |
 |       |                                                                                        |                                |
 
 ![img.png](img.png)
