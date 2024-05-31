@@ -21,7 +21,9 @@ public class Serie {
         this.genero = Categoria.fromString(datosSerie.genero().split(",")[0].trim());
         this.poster = datosSerie.poster();
         this.actores = datosSerie.actores();
-        this.sinopsis = ConsultaChatGPT.obtenerTraduccion(datosSerie.sinopsis());
+        this.sinopsis = datosSerie.sinopsis();
+        // sin creditos en chatgpt
+        //this.sinopsis = ConsultaChatGPT.obtenerTraduccion(datosSerie.sinopsis());
 
     }
 
