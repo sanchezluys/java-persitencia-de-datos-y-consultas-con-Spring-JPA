@@ -153,7 +153,16 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | Se agrega en el menu la opcion 4 de buscar series por titulo, en principal                                     |                                                                                                                  |
 |       | Se arregla serieRepository                                                                                     |                                                                                                                  |
 |       | agregando esta busqueda:  Optional<Serie> findByTituloContainsIgnoreCase(String nombreSerie);                  |                                                                                                                  |
-|       | se aplica la logica y se muestra se existe o no la serie buscada por titulo en la bd                           |                                                                                                                  |
+|       | se aplica la logica y se muestra si existe o no la serie buscada por titulo en la bd                           |                                                                                                                  |
+|       | apoyarse con: https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html                          |                                                                                                                  |
+|       |                                                                                                                |                                                                                                                  |
+| 04-05  | Buscando top 5 series                                                                                          |                                                                                                                  |
+|       | se agrega una nueva **derived query** en serieRepository  para buscar el top5                                  |                                                                                                                  |
+|       | List<Serie> findTop5ByOrderByEvaluacionDesc();                                                                 |                                                                                                                  |
+|       | Se agrega la nueva opcion de top 5 en el menu :                                                                |                                                                                                                  |
+|       |                                                                                                                |                                                                                                                  |
+|       |                                                                                                                |                                                                                                                  |
+|       |                                                                                                                |                                                                                                                  |
 
 ![img.png](img.png)
 ![img_1.png](img_1.png)
