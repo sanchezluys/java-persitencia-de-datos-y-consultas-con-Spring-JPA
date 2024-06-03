@@ -26,7 +26,8 @@ public class Serie {
     //** es enum
     @Enumerated(EnumType.STRING)
     private Categoria genero;
-    @Transient
+    // ahora se mapea @Transient
+    @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Episodio> episodios;
 
 
