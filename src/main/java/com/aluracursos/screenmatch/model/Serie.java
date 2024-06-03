@@ -1,16 +1,28 @@
 package com.aluracursos.screenmatch.model;
 
 import com.aluracursos.screenmatch.service.ConsultaChatGPT;
+import jakarta.persistence.*;
 
 import java.util.OptionalDouble;
 
+@Entity
+@Table(name = "series")
 public class Serie {
+    //** el id
+    @Id
+    private Long Id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //** se quiere que el nombre se la serie sea unico
+    @Column(unique = true)
     private String titulo;
+    //**
     private Integer totalTemporadas;
     private Double evaluacion;
     private String poster;
     private String actores;
     private String sinopsis;
+    //** es enum
+    @Enumerated(EnumType.STRING)
     private Categoria genero;
 
     public Serie(DatosSerie datosSerie)
@@ -36,6 +48,14 @@ public class Serie {
                 ", poster='" + poster + '\'' +
                 ", actores='" + actores + '\'' +
                 ", sinopsis='" + sinopsis + '\'';
+    }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
     }
 
     public String getTitulo() {
