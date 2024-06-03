@@ -94,7 +94,7 @@ public class Principal {
         List<Serie> series = new ArrayList<>();
         series= datosSeries.stream()
                 .map(d-> new Serie(d))
-                .collect(Collectors.toList());
+                .toList();
 
         series.stream()
                 .sorted(Comparator.comparing(Serie::getGenero))
