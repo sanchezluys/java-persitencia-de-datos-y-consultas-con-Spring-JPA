@@ -40,6 +40,7 @@ public class Principal {
                     1 - Buscar series 
                     2 - Buscar episodios
                     3 - Mostrar series buscadas
+                    4 - Buscar series por titulo
                     ----------------------------------------------------------------              
                     0 - Salir
                     ----------------------------------------------------------------
@@ -58,6 +59,9 @@ public class Principal {
                 case 3:
                     mostrarSeriesBuscadas();
                     break;
+                case 4:
+                    buscarSeriesPorTitulo();
+                    break;
                 case 0:
                     System.out.println("Cerrando la aplicación...");
                     break;
@@ -68,6 +72,17 @@ public class Principal {
 
     }
 
+    private void buscarSeriesPorTitulo() {
+        System.out.println("Escribe el nombre de la serie que desea buscar ");
+        var nombreSerie = teclado.nextLine();
+        Optional<Serie> serieBuscada = repositorio.findByTituloContainsIgnoreCase(nombreSerie);
+        if(serieBuscada.isPresent()){
+            System.out.println("La serie buscada es: "+ serieBuscada.get());
+        }
+        else{
+            System.out.println("Serie no encontrada");
+        }
+    }
 
 
     private DatosSerie getDatosSerie() {

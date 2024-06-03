@@ -147,9 +147,13 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | Se debe ajustar setEpisodios en la clase serie: episodios.forEach(e->e.setSerie(this));                        |                                                                                                                  |
 |       | Luego se agrega al toString() de serie los episodios: ", episodios='" + episodios + '\''                       | da error: Caused by: org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role |
 |       | Existen 2 formas de traer los datos: de forma perezosa (LAZY) y de forma ansiosa (EAGER)                       |                                                                                                                  |
-|       | @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.EAGER)                                                                                                               |                                                                                                                  |
+|       | @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.EAGER)                             |                                                                                                                  |
 |       |                                                                                                                |                                                                                                                  |
-|       |                                                                                                                |                                                                                                                  |
+| 04-02 | Búsquedas por partes del título                                                                                |                                                                                                                  |
+|       | Se agrega en el menu la opcion 4 de buscar series por titulo, en principal                                     |                                                                                                                  |
+|       | Se arregla serieRepository                                                                                     |                                                                                                                  |
+|       | agregando esta busqueda:  Optional<Serie> findByTituloContainsIgnoreCase(String nombreSerie);                  |                                                                                                                  |
+|       | se aplica la logica y se muestra se existe o no la serie buscada por titulo en la bd                           |                                                                                                                  |
 
 ![img.png](img.png)
 ![img_1.png](img_1.png)
