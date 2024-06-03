@@ -129,6 +129,13 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | @ManyToOne(fetch = FetchType.LAZY)   @JoinColumn(name = "serie_id")                                            |                                                      |
 |       | y el constructor predeterminado: public Episodio(){}                                                           |                                                      |
 |       |                                                                                                                |                                                      |
+| 03-04 | Profundizando en las relaciones bidireccionales                                                                |                                                      |
+|       | Se crea una variable global con la lista de series disponible en la BD  private List<Serie> series;            |                                                      |
+|       | Se usa optional, se muestra el listado de series disponibles en la bd                                          |                                                      |
+|       | Se pide el nombre de la serie para buscar sus episodios                                                        |                                                      |
+|       | Se valida y se traen los episodios, se usa stream(), se guardan en la BD                                       |                                                      |
+|       |                                                                                                                |                                                      |
+|       |                                                                                                                |                                                      |
 
 ![img.png](img.png)
 ![img_1.png](img_1.png)

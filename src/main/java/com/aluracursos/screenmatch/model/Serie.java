@@ -58,6 +58,14 @@ public class Serie {
                 ", sinopsis='" + sinopsis + '\'';
     }
 
+    public List<Episodio> getEpisodios() {
+        return episodios;
+    }
+
+    public void setEpisodios(List<Episodio> episodios) {
+        this.episodios = episodios;
+    }
+
     public Long getId() {
         return Id;
     }
@@ -121,4 +129,6 @@ public class Serie {
     public void setGenero(Categoria genero) {
         this.genero = genero;
     }
+
+
 }
