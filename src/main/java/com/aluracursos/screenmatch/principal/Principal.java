@@ -40,6 +40,8 @@ public class Principal {
                     4 - Buscar series por titulo
                     5 - Top 5 mejores series
                     6 - Buscar series por categoria
+                    7 - Lista por SQL @query: menos 6 temp y mas de 7.5
+                    8 - Lista usando JPQL (temporadas y evaluacion)
                     ----------------------------------------------------------------              
                     0 - Salir
                     ----------------------------------------------------------------
@@ -67,6 +69,12 @@ public class Principal {
                 case 6:
                     buscarSeriesPorCategoria();
                     break;
+                case 7:
+                    ListaPersonalizada();
+                    break;
+                case 8:
+                    ListaPersonalizadaJPQL();
+                    break;
                 case 0:
                     System.out.println("Cerrando la aplicación...");
                     break;
@@ -75,6 +83,22 @@ public class Principal {
             }
         }
 
+    }
+
+    private void ListaPersonalizadaJPQL() {
+        System.out.println("Lista personalizada usando JPQL");
+        System.out.println("Ingrese el numero de temporadas maximas: ");
+        var temporadas = teclado.nextInt();
+        System.out.println("Ingrese la evaluacion minima: ");
+        var evaluacion = teclado.nextDouble();
+        List<Serie> filtroJPQL=repositorio.seriesTemporadasEvaluacionJPQL(temporadas, (float) evaluacion);
+        filtroJPQL.forEach(System.out::println);
+    }
+
+    private void ListaPersonalizada() {
+        System.out.println("Lista de Series buscadas con sql nativo menos 6 temp y evaluacion mayor 7.5");
+        List<Serie> listaSQL= repositorio.seriesTemporadaEvaluacion();
+        listaSQL.forEach(System.out::println);
     }
 
     private void buscarSeriesPorCategoria() {
