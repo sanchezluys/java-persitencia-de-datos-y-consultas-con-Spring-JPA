@@ -42,6 +42,7 @@ public class Principal {
                     6 - Buscar series por categoria
                     7 - Lista por SQL @query: menos 6 temp y mas de 7.5
                     8 - Lista usando JPQL (temporadas y evaluacion)
+                    9 - Episodios por Nombre con JPQL
                     ----------------------------------------------------------------              
                     0 - Salir
                     ----------------------------------------------------------------
@@ -75,6 +76,9 @@ public class Principal {
                 case 8:
                     ListaPersonalizadaJPQL();
                     break;
+                case 9:
+                    EpisodioNombreJPQL();
+                    break;
                 case 0:
                     System.out.println("Cerrando la aplicación...");
                     break;
@@ -83,6 +87,14 @@ public class Principal {
             }
         }
 
+    }
+
+    private void EpisodioNombreJPQL() {
+        System.out.println("Episodios por Nombre");
+        System.out.println("Ingrese el nombre del episodio: ");
+        var titulo = teclado.nextLine();
+        List<Episodio> episodiosNombre = repositorio.episodiosPorNombre(titulo);
+        episodiosNombre.forEach(System.out::println);
     }
 
     private void ListaPersonalizadaJPQL() {

@@ -176,6 +176,11 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | @Query(): @Query("SELECT s FROM Serie s WHERE s.totalTemporadas <= :temporadas and s.evaluacion >= :evaluacion")                              |                                                                                                                  |
 |       | List<Serie> seriesTemporadasEvaluacionJPQL(Integer temporadas, Float evaluacion);                                                             |                                                                                                                  |
 |       |                                                                                                                                               |                                                                                                                  |
+| 05-04 | Buscando episodios por parte del título usando JPQL                                                                                           |                                                                                                                  |
+|       | @Query("SELECT e FROM Serie s JOIN s.episodios e WHERE e.titulo ILIKE %:nombreEpisodio")                                                      |                                                                                                                  |
+|       | List<Serie> episodiosPorNombre(String nombreEpisodio);                                                                                        |                                                                                                                  |
+|       |                                                                                                                                               |                                                                                                                  |
+|       |                                                                                                                                               |                                                                                                                  |
 
 ![img.png](img.png)
 ![img_1.png](img_1.png)
