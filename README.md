@@ -186,7 +186,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | Se crea el menu 10 top episodios por serie                                                                                                    |                                                                                                                  |
 |       | se arregla buscarSeriesPorTitulo() para que su optional sea una variable global                                                               |                                                                                                                  |
 |       |                                                                                                                                               |                                                                                                                  |
-|       |                                                                                                                                               |                                                                                                                  |
+| RETO  | BD con cantantes y canciones                                                                                                                  |                                                                                                                  |
 
 ![img.png](img.png)
 ![img_1.png](img_1.png)
