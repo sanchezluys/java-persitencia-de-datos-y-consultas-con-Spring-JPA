@@ -18,9 +18,11 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | incializando la rama del nuevo proyecto                              |                                                      |
 |       | limpiando las imagenes                                               |                                                      |
 |       | Agregando dependencia web                                            |                                                      |
-|       | spring-boot-starter-web                                              |                                                      |
+|       | spring-boot-starter-web                                              |  <artifactId>spring-boot-starter-web</artifactId>                                                    |
 |       | se copia la clase screenmatchapplication Consola                     |                                                      |
 |       | es necesario no usar la interface commandlinerunner. en la nueva web | ![img.png](img.png)                                  |
 |       | se limpia el codigo y se verifica si el servidor tomcat se ejecuta   | asi se muestra el servicio tomcat corriendo en error |
 |       |                                                                      |                                                      |
                                                                                                                 |       |
+
+
