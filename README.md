@@ -38,9 +38,17 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       |                                                                                |                                                                                                                                  |
 | 02-02 | Devolviendo series en el navegador                                             |                                                                                                                                  |
 |       | se arregla el controlador para enviar al front el listado de series            |                                                                                                                                  |
-|       | @Autowired, private SerieRepository repositorio; return repositorio.findAll(); | se presenta un error por busqueda circular en jackson databind                                                                   |
-|       |                                                                                | stackoverflow                                                                                                                    |
+|       | @Autowired, private SerieRepository repositorio; return repositorio.findAll(); | se presenta un error por referencia circular en jackson databind                                                                 |
+|       | DTO:                                                                           | stackoverflow                                                                                                                    |
 |       |                                                                                | ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/series] as the response has already been committed |
+| 02-04 | Representando series de la base de datos                                       |                                                                                                                                  |
+|       | se crea el paquete dto, cun record SerieDTO, en ese record se agregan          | ![img_2.png](img_2.png)                                                                                                                                 |
+|       | los datos de la clase Serie que se quieran usar.                               |                                                                                                                                  |
+|       | se usa ahora serieDTO en el controlador de serie                               |                                                                                                                                  |
+|       | se agrega un stream() para crear la lista que cumpla con el dto                |                                                                                                                                  |
+|       | ojo en el stream() los datos deben traerse en orden igual al DTO               |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
 |       |                                                                                |                                                                                                                                  |
 
 
