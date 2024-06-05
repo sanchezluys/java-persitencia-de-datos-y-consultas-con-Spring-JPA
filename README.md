@@ -12,17 +12,29 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 
 ### Progreso del curso by sanchezluys parte 2: con srping web
 
-| Clase | Descripción                                                          | Estado                                               |
+| Clase | Descripción                                                          | Estado    / Observaciones                            |
 |-------|----------------------------------------------------------------------|------------------------------------------------------|
 | 01-04 | Utilizando Spring web                                                |                                                      |
 |       | incializando la rama del nuevo proyecto                              |                                                      |
 |       | limpiando las imagenes                                               |                                                      |
 |       | Agregando dependencia web                                            |                                                      |
-|       | spring-boot-starter-web                                              |  <artifactId>spring-boot-starter-web</artifactId>                                                    |
+|       | spring-boot-starter-web                                              | <artifactId>spring-boot-starter-web</artifactId>     |
 |       | se copia la clase screenmatchapplication Consola                     |                                                      |
 |       | es necesario no usar la interface commandlinerunner. en la nueva web | ![img.png](img.png)                                  |
 |       | se limpia el codigo y se verifica si el servidor tomcat se ejecuta   | asi se muestra el servicio tomcat corriendo en error |
 |       |                                                                      |                                                      |
-                                                                                                                |       |
+|       |                                                                      | Se puede definir el puerto en spring, agregando      |
+|       |                                                                      | al application.properties                            |
+|       |                                                                      | server.port=8081  por ejemplo.                       |
+|       |                                                                      |                                                      |
+| 01-07 | Mostrando un mensaje en el navegador                                 |                                                      |
+|       | MVC + API REST                                                       |                                                      |
+|       | - se comenta todo del screenmatch de consola                         |                                                      |
+|       | - se crea el nuevo paquete de controller                             |                                                      |
+|       | - se crea la nueva clase SerieController                             |                                                      |
+|       | -- se agregan las anotaciones en la clase:                           |                                                      |
+|       | --- @RestController y @GetMapping                                    |  ![img_1.png](img_1.png)                                                    |
+|       | --- en el controlador podemos enviar un mensaje al sitio web         |                                                      |
+|       |                                                                      |                                                      |
 
 
