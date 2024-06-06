@@ -63,8 +63,17 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | 8080 ---> 5500                                                                 |                                                                                                                                  |
 |       |                                                                                |                                                                                                                                  |
 | 02-07 | Configurando el Live Reload                                                    |                                                                                                                                  |
-|       | se agrega la dependencia para spring-boot-devtools                             | ![img_4.png](img_4.png)                                                                                                                                 |
-|       | se habilita el auto build                                                      | ![img_5.png](img_5.png)                                                                                                                                 |
+|       | se agrega la dependencia para spring-boot-devtools                             | ![img_4.png](img_4.png)                                                                                                          |
+|       | se habilita el auto build                                                      | ![img_5.png](img_5.png)                                                                                                          |
 |       | en avanzadas se activa la compilacion automatica                               |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
+| 03-02 | creando un servicio para séries                                                |                                                                                                                                  |
+|       | se crea nuevo servicio, para buenas practicas y quitarle responsabilidades     |                                                                                                                                  |
+|       | al seriecontroller, creando serieservice, con la anotacion @Service            |                                                                                                                                  |
+|       | se lleva el codigo del metodo al serieservice                                  |                                                                                                                                  |
+|       | se verifica funcionamiento con postman                                         | ![img_6.png](img_6.png)                                                                                                          |
+|       |                                                                                |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
 
 
