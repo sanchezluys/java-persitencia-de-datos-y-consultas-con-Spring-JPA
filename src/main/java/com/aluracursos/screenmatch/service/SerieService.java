@@ -1,6 +1,7 @@
 package com.aluracursos.screenmatch.service;
 
 import com.aluracursos.screenmatch.dto.SerieDTO;
+import com.aluracursos.screenmatch.model.Serie;
 import com.aluracursos.screenmatch.repository.SerieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +16,15 @@ public class SerieService {
     private SerieRepository repositorio;
 
     public List<SerieDTO> obtenerTodasLasSeries(){
-        return repositorio.findAll().stream()
+        return convierteDatos(repositorio.findAll());
+    }
+
+    public List<SerieDTO> obtenerTop5() {
+        return convierteDatos(repositorio.findTop5ByOrderByEvaluacionDesc());
+    }
+
+    private List<SerieDTO> convierteDatos(List<Serie> serie) {
+        return serie.stream()
                 .map(s -> new SerieDTO(
                         s.getTitulo(),
                         s.getTotalTemporadas(),
@@ -26,4 +35,6 @@ public class SerieService {
                         s.getGenero()
                 )).collect(Collectors.toList());
     }
+
+
 }

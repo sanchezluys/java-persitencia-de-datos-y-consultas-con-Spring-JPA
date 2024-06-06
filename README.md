@@ -73,7 +73,13 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | se lleva el codigo del metodo al serieservice                                  |                                                                                                                                  |
 |       | se verifica funcionamiento con postman                                         | ![img_6.png](img_6.png)                                                                                                          |
 |       |                                                                                |                                                                                                                                  |
-|       |                                                                                |                                                                                                                                  |
+| 03-05 | Mostrando el top 5 de series de nuestra base de datos                          |                                                                                                                                  |
+|       | se crean las otras rutas en el seriecontroller                                 |                                                                                                                                  |
+|       | /series/top5 con el metodo obtenerTop5()                                       |                                                                                                                                  |
+|       | - usando un metodo que ya estaba definido: findTop5ByOrderByEvaluacionDesc()   |                                                                                                                                  |
+|       | - para mejorar el codigo se crea un metodo convierteDatos()                    |                                                                                                                                  |
+|       | se verifica con postman                                                        | ![img_7.png](img_7.png)                                                                                                          |
+|       |                                                                                | ![img_8.png](img_8.png)                                                                                                                                 |
 |       |                                                                                |                                                                                                                                  |
 
 
