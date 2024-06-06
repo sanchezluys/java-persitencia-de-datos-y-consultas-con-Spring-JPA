@@ -58,5 +58,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | deberia verse en el front los datos, en red-todos-archivo-ver respuesta        |                                                                                                                                  |
 |       | el front corre en el puerto 5500, se configura en el archivo del front         |                                                                                                                                  |
 |       |                                                                                |                                                                                                                                  |
+|       | se corrige el codigo de la clase CorsConfiguration                             |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
 
 
