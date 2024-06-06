@@ -58,7 +58,13 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | deberia verse en el front los datos, en red-todos-archivo-ver respuesta        |                                                                                                                                  |
 |       | el front corre en el puerto 5500, se configura en el archivo del front         |                                                                                                                                  |
 |       |                                                                                |                                                                                                                                  |
-|       | se corrige el codigo de la clase CorsConfiguration                             |                                                                                                                                  |
+|       | se corrige el codigo de la clase CorsConfiguration                             | ![img_3.png](img_3.png)                                                                                                          |
+|       | verificar que los puertos coincidan ya que me daba error por los puertos       |                                                                                                                                  |
+|       | 8080 ---> 5500                                                                 |                                                                                                                                  |
 |       |                                                                                |                                                                                                                                  |
+| 02-07 | Configurando el Live Reload                                                    |                                                                                                                                  |
+|       | se agrega la dependencia para spring-boot-devtools                             | ![img_4.png](img_4.png)                                                                                                                                 |
+|       | se habilita el auto build                                                      | ![img_5.png](img_5.png)                                                                                                                                 |
+|       | en avanzadas se activa la compilacion automatica                               |                                                                                                                                  |
 
 

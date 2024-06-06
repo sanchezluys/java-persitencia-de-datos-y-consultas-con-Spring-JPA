@@ -17,7 +17,6 @@ public class SerieController {
     private SerieRepository repositorio;
 
     @GetMapping("/series")
-
     public List<SerieDTO> obtenerTodasLasSeries(){
         return repositorio.findAll().stream()
                 .map(s -> new SerieDTO(
