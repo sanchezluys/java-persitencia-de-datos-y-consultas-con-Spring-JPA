@@ -1,6 +1,7 @@
 package com.aluracursos.screenmatch.controller;
 
 import com.aluracursos.screenmatch.dto.SerieDTO;
+import com.aluracursos.screenmatch.dto.EpisodioDTO;
 
 
 import com.aluracursos.screenmatch.service.SerieService;
@@ -39,5 +40,10 @@ public class SerieController {
     @GetMapping("/{id}")
     public SerieDTO obtenerSeriePorId(@PathVariable Long id){
         return servicio.obtenerSeriePorId(id);
+    }
+
+    @GetMapping("/{id}/temporadas/todas")
+    public List<EpisodioDTO> obtenerTodasLasTemporadas(@PathVariable Long id){
+            return servicio.obtenerTodasLasTemporadas(id);
     }
 }

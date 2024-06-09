@@ -100,5 +100,12 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long' |                                                                                                                                  |
 |       | ya que faltaba deifinir el id en serieDTO                                            |                                                                                                                                  |
 |       |                                                                                      |                                                                                                                                  |
+| 04-02 | Mostrando todos los episodios                                                        |  ![img_9.png](img_9.png)                                                                                                                                |
+|       | se agrega en el controller @GetMapping("/{id}/temporadas/todas")                     |                                                                                                                                  |
+|       | se crea la clase record EpisodioDTO                                                  |                                                                                                                                  |
+|       | se usa optional y stream(), ya muestra todas las temporadas pero no una a una        |                                                                                                                                  |
+|       |                                                                                      |                                                                                                                                  |
+|       |                                                                                      |                                                                                                                                  |
+|       |                                                                                      |                                                                                                                                  |
 
 
