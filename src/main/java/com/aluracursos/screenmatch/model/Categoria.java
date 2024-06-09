@@ -2,12 +2,13 @@ package com.aluracursos.screenmatch.model;
 
 public enum Categoria {
 
-    ACCION("Action","Accion"),
+    ACCION("Action","Acción"),
     COMEDIA("Comedy", "Comedia"),
     DRAMA("Drama", "Drama"),
     CRIMEN("Crime", "Crimen"),
     ROMANCE("Romance", "Romance"),
     DOCUMENTAL("Documentary", "Documental"),
+    AVENTURA("Aventure", "Aventura"),
     CORTOMETRAJE("Short", "Cortometraje");
 
     private String categoriasOmdb;

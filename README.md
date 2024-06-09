@@ -110,5 +110,10 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | se crea la logica para los episodios por temporada por numero                        |                                                                                                                                  |
 |       | se usa stream y jpql                                                                 |                                                                                                                                  |
 |       |                                                                                      |                                                                                                                                  |
+| 04-05 | Trabajando con series categorizadas                                                  |                                                                                                                                  |
+|       | se crea el @GetMapping("/categoria/{nombreGenero}") en el controller                 |                                                                                                                                  |
+|       |                                                                                      |                                                                                                                                  |
+|       |                                                                                      |                                                                                                                                  |
+|       |                                                                                      |                                                                                                                                  |
 
 
