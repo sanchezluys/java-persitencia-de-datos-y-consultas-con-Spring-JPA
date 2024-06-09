@@ -113,7 +113,7 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 | 04-05 | Trabajando con series categorizadas                                                  |                                                                                                                                  |
 |       | se crea el @GetMapping("/categoria/{nombreGenero}") en el controller                 |                                                                                                                                  |
 |       |                                                                                      |                                                                                                                                  |
-|       |                                                                                      |                                                                                                                                  |
+| 05-04 | Proyecto nuevo                                                                       |                                                                                                                                  |
 |       |                                                                                      |                                                                                                                                  |
 
 
