@@ -79,7 +79,19 @@ Proyecto desarrollado durante el segundo curso de la formación Avanzando con Ja
 |       | - usando un metodo que ya estaba definido: findTop5ByOrderByEvaluacionDesc()   |                                                                                                                                  |
 |       | - para mejorar el codigo se crea un metodo convierteDatos()                    |                                                                                                                                  |
 |       | se verifica con postman                                                        | ![img_7.png](img_7.png)                                                                                                          |
-|       |                                                                                | ![img_8.png](img_8.png)                                                                                                                                 |
+|       |                                                                                | ![img_8.png](img_8.png)                                                                                                          |
+| 03-07 | Exhibiendo las series más recientes                                            |                                                                                                                                  |
+|       | usando jpql, es mas seguro y eficiente                                         |                                                                                                                                  |
+|       | da error en el dialecto, revisando con IA tabnine recomienda usar:             |                                                                                                                                  |
+|       | hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect                      |                                                                                                                                  |
+|       | se actualiza y ahora si funciona.                                              |                                                                                                                                  |
+|       | - se va a serieservice                                                         |                                                                                                                                  |
+|       | - para crearel metodo   obtenerLanzamientosMasRecientes()                      |                                                                                                                                  |
+|       | luego vamos al controlador                                                     |                                                                                                                                  |
+|       | - usamos @RequestMapping("/series") para ese endpoint que se repite            |                                                                                                                                  |
+|       | - se crea la ruta lanzamientos                                                 |                                                                                                                                  |
+|       | - se verifica sitio web corriendo                                              |                                                                                                                                  |
+|       |                                                                                |                                                                                                                                  |
 |       |                                                                                |                                                                                                                                  |
 
 
